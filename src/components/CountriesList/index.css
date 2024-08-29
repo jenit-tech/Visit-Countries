@@ -1,0 +1,113 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #161624;
+  padding: 30px 50px;
+}
+
+.responsive-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #161624;
+  width: 90%;
+}
+
+@media screen and (min-width: 992px) {
+  .responsive-container {
+    width: 80%;
+  }
+}
+
+.responsive-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.countries-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #334155;
+  width: 90%;
+  height: 35vh;
+  border-radius: 12px;
+  background-color: #1f1f2f;
+  overflow-y: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nocountry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.nocountry-heading {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.visited-countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0;
+}
+
+.visited-countries-items {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.visited-countries-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.visited-countries-img {
+  height: 130px;
+  width: 250px;
+}
+
+@media screen and (min-width: 992px) {
+  .visited-countries-img {
+    height: 200px;
+  }
+}
+
+.visited-countries-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f2f;
+  width: 250px;
+  padding: 0px;
+}
+
+.visited-countries-name {
+  font-family: 'Roboto';
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+.remove-button {
+  border-radius: 3px;
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  font-family: 'Roboto';
+  color: #cbd5e1;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
